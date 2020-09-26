@@ -16,10 +16,10 @@ RISPOSTE
 
 1 SELECT * FROM `ospiti` WHERE `document_type` = 'CI'
 2 SELECT * FROM `ospiti` WHERE `date_of_birth`>= '1989-01-01'
-3 SELECT * FROM `ospiti` WHERE `date_of_birth`>= '1990-01-24'
+3 SELECT * FROM `ospiti` WHERE `date_of_birth`>= '1990-09-24'
 4 SELECT * FROM `ospiti` WHERE `name` LIKE 'D%'
 5 SELECT SUM(`ospite_id`) FROM `paganti` WHERE `ospite_id` >= 1
-6 SELECT MAX `price` FROM `pagamenti`
+6 SELECT MAX(`price`) FROM `pagamenti`
 7 SELECT * FROM `ospiti` WHERE `date_of_birth`>= 1975-01-01 AND `document_type` = 'Driver License'
 8 SELECT `ospite_id` FROM `paganti` WHERE `ospite_id` >= '1'
 9 SELECT SUM(`beds`) AS`totale_posti_letto` FROM `stanze`
